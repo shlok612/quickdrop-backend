@@ -11,7 +11,11 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "*"
+    origin: [
+      "http://localhost:5173",
+      "https://quickdrop-frontend-6mlu.vercel.app"
+    ],
+    methods: ["GET", "POST"]
   }
 });
 
