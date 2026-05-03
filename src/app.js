@@ -5,7 +5,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",                 // local frontend
-    "https://your-frontend.vercel.app"       // deployed frontend (update later)
+    "https://quickdrop-frontend-6mlu.vercel.app"      // deployed frontend (update later)
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
